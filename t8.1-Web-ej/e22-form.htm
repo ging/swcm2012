@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <meta http-equiv="Content-type" 
+          content="text/html; charset=utf-8" >
+    <title> Formulario </title>  </head> 
+  <body>
+    <form method=get 
+          action="http://localhost:22000/cgi-bin/aut">
+        
+      <h1>Envíe sus datos</h1>
+
+      <input type="hidden" name="id" value="1897">  
+
+      <label for="nombre"> Nombre: </label> 
+      <input type="text" name="nombre" autofocus 
+             value="José García" ><p>
+
+      <input type="radio" name="sexo" 
+             value="hombre">        Hombre
+      <input type="radio" name="sexo" 
+             value="mujer" checked> Mujer<p>
+
+      <label  for="profesion"> Profesión: </label> 
+      <select name="profesion">
+        <option>          Médico</option>
+        <option selected> Ingeniero</option>
+        <option>          Abogado</option> </select><p>
+
+      <textarea name="msj" rows=2 cols=30> 
+          Deje su mensaje aquí</textarea><p><p>
+
+      <input type=reset value="Inicializar" disabled><br>
+      <input type=submit value="Envíar"> </form> </body> </html>

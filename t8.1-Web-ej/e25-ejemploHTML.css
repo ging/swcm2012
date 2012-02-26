@@ -1,0 +1,16 @@
+/* Ejemplo de hoja de estilo */
+
+
+h1 {color: red; 
+    background-color: #ABD;}
+
+ul {color: blue; 
+    font-size: smaller; 
+    font-style: italic; 
+    background-color: #ABD;}
+
+
+table {border-collapse: separate; 
+       border-spacing: 5px 5px; 
+       background-color: #8BD;}
+

@@ -1,0 +1,32 @@
+/* Hoja de estilo para Columnas.xml */
+
+
+body {margin: 10px; padding: 10px}
+
+.container {position: relative; 
+            width: 450px; 
+            border: solid 1px; 
+            background: #ABD; } 
+
+.cabecera {background: #BCE; 
+           padding: 5px; 
+           font-weight: bold; 
+           font-size: 24pt; 
+           text-align: center} 
+
+.principal {float: right; 
+            padding: 1%; 
+            background: #CDF; 
+            width: 80%}
+
+.lateral {padding: 1%; 
+          font-size: 8pt; } 
+
+.pie {clear: both; 
+      hight: 50px; 
+      background: #89B; 
+      text-align: left;
+      font-size: 8pt; 
+      font-weight: bold;} 
+
+
