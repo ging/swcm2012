@@ -6,7 +6,7 @@ public class WebServer {
     byte[] body;
     String line, code, path="";
 
-    ServerSocket serv = new ServerSocket(8081);
+    ServerSocket serv = new ServerSocket(8080);
     System.out.println("Server created at port 8080.");
 
     while (true) {
@@ -16,16 +16,16 @@ public class WebServer {
                new InputStreamReader(c.getInputStream(), "UTF-8"));  // Reader de entrada (UTF-8)
          OutputStream netOut = c.getOutputStream();                  // Salida: stream de bytes compatible UTF-8 y binario
 
-         System.out.println(line = URLDecoder.decode(netIn.readLine(), "UTF-16")); // Decodifica URL (xxx-urlencoded)
+         System.out.println(line = URLDecoder.decode(netIn.readLine(), "UTF-8")); // Decodifica caracteres UTF-8 xxx-urlencoded
          if (line.matches("GET .*")) {
-            System.out.println("Path: " + path=line.replaceFirst("GET[ ]+/(.*) .*", "$1" )); // Analiza si es un comando GET y extrae “path”
+            System.out.println("Path: " + (path=line.replaceFirst("GET[ ]+/(.*) .*", "$1" ))); // Analiza si es un comando GET y extrae “path”
             if ((path.matches(""))||(path.matches("/$"))) { path += "index.html" ; }   // inserta “index.html” si directorio
 
             while (!("".equals(line = netIn.readLine()))) { System.out.println(line); } // lee el resto de la cabecera
 
             try { 
               RandomAccessFile i = new RandomAccessFile(path, "r");     // Abre fichero 
-              i.read(body = new byte[(int)i.length()]);                 // Lee fichero UTF-8 o binario
+              i.readFully(body = new byte[(int)i.length()]);                 // Lee fichero UTF-8 o binario
                 code = "200 OK";
 
             } catch (FileNotFoundException f) {                         // Si fichero no existe catura excepción
