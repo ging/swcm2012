@@ -1,0 +1,34 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>jQuery example</title>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+  <script>
+    $(function(){
+      $("#login-selector").on('click', function() {
+         $(".login").removeAttr("disabled");
+         $(".openid").attr("disabled", true);
+      });
+
+      $("#openid-selector").on('click', function() {
+         $(".openid").removeAttr("disabled");[]
+         $(".login").attr("disabled", true);
+      });
+    });
+  </script>
+</head>
+<body>
+  <h1>Login</h1>
+  <form action="">
+    <p>
+    <input type="radio" id="login-selector" name="selector" checked>
+      Nombre <input type="text" class="login">  
+      Contraseña <input type="text" class="login">
+    </p><p>
+    <input type="radio" id="openid-selector" name="selector">
+      OpenID <input type="text" class="openid" disabled>
+  </form>
+</body>
+</html>
+

@@ -1,0 +1,19 @@
+
+*                    { margin: 0; padding: 0; }
+body                 { font: 16px Georgia, serif; }
+#page-wrap           { margin: 2% auto; color: white; }
+#page-wrap > div     { border: 1px solid #999; padding: 1%; 
+	                   margin-bottom: 1px; color: black; }
+
+#header  { background: #eee; }
+#nav     { background: #eee; }
+#section { background: #eee; }
+
+.post    { background: #eee; border: 1px solid #999; 
+	       padding: 5px; margin-bottom: 10px; color: black;  }
+.post > p            { margin-top: 10px; }
+.post > .post-footer { margin: 10px 0px 0px 20px; font-weight: bold; }
+
+#footer        { background: #eee; text-align: center; }
+
+div span       { margin: 0px 10px 0px 0px;}

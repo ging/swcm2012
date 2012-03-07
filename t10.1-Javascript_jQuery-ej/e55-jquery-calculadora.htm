@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <title> Calculadora </title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>
+      $("input:button").on('click', function() {
+         $("input:text[name=result]").val(eval($("input:text[name=expr]").val()));
+      });
+    </script>
+  </head>
+  <body>
+    <form>
+      Introduzca una expresion: <br>
+      <input type="text" name="expr" size=20> <P>
+      <input type="button" value="Calcular Resultado"> <P>
+      Resultado: <BR>
+      <input type="text" name="result" size=20> <BR>
+    </form>
+  </body>
+</html>
+
