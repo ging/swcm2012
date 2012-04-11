@@ -1,0 +1,4 @@
+body { background: #333; }
+#main { width: 548px; }
+#page-wrap:after { content: "Narrow Layout"; }
+#secondary-two { display: none; }

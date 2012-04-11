@@ -1,0 +1,33 @@
+<!-- <!doctype html>  -->
+<html>
+<head>
+  <script type="text/javascript" src="jquery-1.4.2.js"></script>
+  <title>Local Storage</title>
+  </script>
+</head>
+
+<body>
+  <h1>Ejemplo localStorage</h1>
+  </form> 
+
+  <form method=get action="http://localhost/cgi-bin">
+    Introducir nombre: <br />
+    <input id=inn type=text name=nn size=40 />
+    <p />
+    <input type=button value="Borrar nombre" 
+      onClick="form.nn.value = localStorage.nn='';" />
+    <input type=button value=Guardar 
+      onClick="localStorage.nn=form.nn.value;" />
+    <input type=submit value="Enviar formulario"  
+      onClick="localStorage.nn=form.nn.value;"/ >
+
+    <script type="text/javascript">
+       $(function() { $("#inn").val(localStorage.nn); });
+    </script>
+  </form> 
+
+  </body>
+</html>
+
+
+

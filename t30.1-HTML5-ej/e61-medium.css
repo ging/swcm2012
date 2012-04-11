@@ -1,0 +1,6 @@
+body { background: #666; }
+#main { width: 700px; }
+#page-wrap:after { content: "Medium Layout"; }
+section { float: right; width: 440px; height: 300px; }
+nav { float: left; width: 170px; height: 300px; }
+#secondary-two { display: none; }

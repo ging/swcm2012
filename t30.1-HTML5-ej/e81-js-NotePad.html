@@ -1,0 +1,33 @@
+<!DOCTYPE html> <html>
+<head><title>My Notepad</title>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" ></meta>
+  <script type="text/javascript" 
+          src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script >
+   $(function(event){
+      $("#saveb").on('click', function() {
+      	 localStorage.t=$("#tarea").val();
+      	 $("#content").html(localStorage.t);
+         $(".edit").hide(); $(".view").show();
+      });
+      $("#editb").on('click', function() {
+      	 $("#tarea").val(localStorage.t);
+         $(".edit").show(); $(".view").hide();
+      });
+      $(".edit").hide(); $(".view").show();    
+      $("#content").html(   localStorage.t 
+                         || $("#tarea").html());
+    });
+   </script>
+</head>
+<body>
+  <h1>Mi Bloc de Notas</h1>
+  <form>
+    <input type=button value="Save" id="saveb" class="edit">
+    <input type=button value="Edit" id="editb" class="view"><p>
+    <textarea rows=10 cols=30 id="tarea" class="edit" >
+          Mi libreta</textarea>
+  </form>
+    <pre id="content" class="view"> </pre>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+/* Estilo para marcas HTML5 */
+
+body {position: relative;
+      width: 600px; 
+      border: solid 1px;
+      padding: 0px;
+      margin:15px auto;} 
+
+#main {background: #E8E8E8; } 
+
+header#page_header {
+      background: #D0D0D0;
+      padding: 5px;
+      margin: 0px 0px 3px 0px; 
+      font-weight: bold; 
+      font-size: 18pt; 
+      text-align: center} 
+
+section#posts {float: right; 
+      padding: 3%; 
+      background: #FFFFFF; 
+      width: 80%}
+
+nav {float: left;
+     padding: 1%; 
+     font-size: 12pt; } 
+
+footer {clear: both;
+        height: 30px;
+        background: #F5F5F5;
+        text-align: center;
+        font-size: 12pt;
+        font-weight: bold;}
+
+nav ul{ 
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+
+footer#page_footer nav ul li{ 
+       margin: 0 0 0 60px;
+       display:inline;}
+
+@media screen and (max-device-width: 480px) {
+  section, nav {
+    float: none;
+    width: auto;
+  }
+}

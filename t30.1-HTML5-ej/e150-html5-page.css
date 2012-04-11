@@ -1,0 +1,9 @@
+/* estilo para html5 */  body {  margin: 10px; 
+        background: #ABD; 
+        padding: 1px}
+
+  header.h1 {background: #BCE; 
+           margin: 10px;            font-weight: bold;            font-size: 24pt;            text-align: center}  container { margin: 16px;              padding: 3px; }  header.h2 {background: #89B;            margin: 16px;           font-weight: bold;            font-size: 16pt;            text-align: center}  section {float: right;             padding: 1%;             background: #CDF;             width: 80%}  nav {   padding: 1%;           font-size: 11pt;}   footer {clear: both;      background: #BCE;       text-align: left;      font-size: 10pt; 
+      margin: 16px;
+      padding: 3px;      font-weight: bold;} 
+

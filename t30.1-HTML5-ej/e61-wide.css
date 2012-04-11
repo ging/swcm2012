@@ -1,0 +1,6 @@
+body { background: #999; }
+#main { width: 900px; position: relative; }
+#page-wrap:after { content: "Wide Layout"; }
+section { float: left; width: 440px; height: 300px; margin-left: 218px; }
+nav { width: 170px; height: 300px; position: absolute; left: 0; top: 64px; }
+
